@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
 import AuthReducer from "./auth/AuthSlice";
-import { checkAuth } from "./auth/checkAuth";
 
  const store = configureStore({
   reducer: {
@@ -8,7 +7,6 @@ import { checkAuth } from "./auth/checkAuth";
   },
 });
 
-store.dispatch(checkAuth());
 
 export default store;
 
